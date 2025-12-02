@@ -15,25 +15,13 @@ declare(strict_types=1);
 <body>
 	<h1>Цикл while</h1>
 	<?php
-	/*
-	ЗАДАНИЕ
-	- Создайте переменную $var и присвойте ей строковое значение 'ПРИВЕТ'
-	- Используя цикл while выведите значение переменной $var в столбик так, 
-	  чтобы на выходе в браузере получилось:
-	П
-	Р
-	И
-	В
-	Е
-	Т
-	*/
-	$var = 'ПРИВЕТ';
-	$length = mb_strlen($var, 'UTF-8');
-	$i = 0;
-	while ($i < $length) {
-		echo mb_substr($var, $i, 1, 'UTF-8') . "<br>";
-		$i++;
-	}
+		$var = 'ПРИВЕТ';
+		$length = mb_strlen($var, 'UTF-8');
+		$i = 0;
+		while ($i < $length) {
+			echo mb_substr($var, $i, 1, 'UTF-8') . "<br>";
+			$i++;
+		}
 	?>
 </body>
 
