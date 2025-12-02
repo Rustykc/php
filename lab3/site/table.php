@@ -39,21 +39,25 @@
   <br>
 
   <?php
-  if (!empty($_GET['cols']) && !empty($_GET['rows'])) {
-      $cols = (int)$_GET['cols'];
-      $rows = (int)$_GET['rows'];
-      $color = $_GET['color'] ?? '#ff0000';
+    if (!empty($_GET['cols']) && !empty($_GET['rows'])) {
+        $cols = (int)$_GET['cols'];
+        $rows = (int)$_GET['rows'];
+        $color = $_GET['color'] ?? '#90ee90'; // светло-зеленый по умолчанию
 
-      echo "<table border='1' cellpadding='5'>";
-      for ($tr = 1; $tr <= $rows; $tr++) {
-          echo "<tr>";
-          for ($td = 1; $td <= $cols; $td++) {
-              echo "<td style='border:1px solid $color;'>".($td * $tr)."</td>";
-          }
-          echo "</tr>";
-      }
-      echo "</table>";
-  }
+        echo "<table border='1' cellpadding='5'>";
+        for ($tr = 1; $tr <= $rows; $tr++) {
+            echo "<tr>";
+            for ($td = 1; $td <= $cols; $td++) {
+                if ($tr == 1 || $td == 1) {
+                    echo "<th style='background-color: $color; text-align:center;'>".($td * $tr)."</th>";
+                } else {
+                    echo "<td>".($td * $tr)."</td>";
+                }
+            }
+            echo "</tr>";
+        }
+        echo "</table>";
+    }
   ?>
 
 </section>
