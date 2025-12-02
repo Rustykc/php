@@ -1,103 +1,110 @@
 <!DOCTYPE html>
 <html lang="ru">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Лабораторные работы</title>
+    <title>лабораторные работы</title>
+
     <style>
         body {
             font-family: Arial;
             margin: 20px;
-            background-color: rgba(241, 123, 252, 0.38);
+            background: #e8f2ff;
+            color: #0a2a43;
         }
 
-        a:link {
-            color: #520052ff;
+        h1, h2 {
+            color: #0a2a43;
+            margin-top: 30px;
         }
 
-        a:visited {
-            color: #5f030f;
+        ul {
+            padding-left: 20px;
+            margin-bottom: 25px;
+        }
+
+        a {
+            color: #0d4fa3;
+            text-decoration: none;
+            font-weight: bold;
         }
 
         a:hover {
-            color: #048a9cff;
+            color: #0a7cc4;
             text-decoration: underline;
         }
 
-        a:active {
-            color: #078686;
-        }
-
-        hr {
-            border-color: #ff6347;
+        .block {
+            margin-bottom: 35px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid rgba(0,0,0,0.05); /* почти незаметная */
         }
     </style>
 </head>
 
 <body>
-    <h1>Лабораторные работы:</h1>
 
-    <hr>
+<h1>лабораторные работы</h1>
 
-    <h2>Лабораторная работа 1:</h2>
+<div class="block">
+    <h2>лабораторная работа 1</h2>
     <ul>
-        <li><a href="lab1/1_1.php">Номер 1</a></li>
-        <li><a href="lab1/1_2.php">Номер 2</a></li>
-        <li><a href="lab1/1_3.php">Номер 3</a></li>
-        <li><a href="lab1/1_4.php">Номер 4</a></li>
-        <li><a href="lab1/1_5.php">Номер 5</a></li>
+        <li><a href="lab1/lab1_1.php">задание 1</a></li>
+        <li><a href="lab1/lab1_2.php">задание 2</a></li>
+        <li><a href="lab1/lab1_3.php">задание 3</a></li>
+        <li><a href="lab1/lab1_4.php">задание 4</a></li>
+        <li><a href="lab1/lab1_5.php">задание 5</a></li>
     </ul>
+</div>
 
-    <hr>
-
-    <h2>Лабораторная работа 2:</h2>
+<div class="block">
+    <h2>лабораторная работа 2</h2>
     <ul>
-        <li><a href="lab2/2_1.php">Номер 1</a></li>
-        <li><a href="lab2/2_2.php">Номер 2</a></li>
-        <li><a href="lab2/2_3.php">Номер 3</a></li>
-        <li><a href="lab2/2_4.php">Номер 4</a></li>
-        <li><a href="lab2/2_5.php">Номер 5</a></li>
-        <li><a href="lab2/2_6.php">Номер 6</a></li>
-        <li><a href="lab2/2_7.php">Номер 7</a></li>
-        <li><a href="lab2/2_8.php">Номер 8</a></li>
+        <li><a href="lab2/lab2_1.php">задание 1</a></li>
+        <li><a href="lab2/lab2_2.php">задание 2</a></li>
+        <li><a href="lab2/lab2_3.php">задание 3</a></li>
+        <li><a href="lab2/lab2_4.php">задание 4</a></li>
+        <li><a href="lab2/lab2_5.php">задание 5</a></li>
+        <li><a href="lab2/lab2_6.php">задание 6</a></li>
+        <li><a href="lab2/lab2_7.php">задание 7</a></li>
+        <li><a href="lab2/lab2_8.php">задание 8</a></li>
     </ul>
+</div>
 
-    <hr>
-
-    <h2>Лабораторная работа 3:</h2>
+<div class="block">
+    <h2>лабораторная работа 3</h2>
     <ul>
-        <li><a href="lab3/3_1.php">Номер 1</a></li>
-        <li><a href="lab3/3_2.php">Номер 2</a></li>
-        <li><a href="lab3/3_3.php">Номер 3</a></li>
-        <li><a href="lab3/3_4.php">Номер 4</a></li>
-        <li><a href="lab3/site/index.php">Номер 5</a></li>
+        <li><a href="lab3/lab3_1.php">задание 1</a></li>
+        <li><a href="lab3/lab3_2.php">задание 2</a></li>
+        <li><a href="lab3/lab3_3.php">задание 3</a></li>
+        <li><a href="lab3/lab3_4.php">задание 4</a></li>
+        <li><a href="lab3/site/index.php">задание 5</a></li>
     </ul>
+</div>
 
-    <hr>
-
-    <h2>Лабораторная работа 4:</h2>
+<div class="block">
+    <h2>лабораторная работа 4</h2>
     <ul>
-        <li><a href="lab4/site/index.php">Номер 1</a></li>
+        <li><a href="lab4/site/index.php">задание 1</a></li>
     </ul>
+</div>
 
-    <hr>
-
-    <h2>Лабораторная работа 5:</h2>
+<div class="block">
+    <h2>лабораторная работа 5</h2>
     <ul>
-        <li><a href="lab5/5_1.php">Номер 1</a></li>
-        <li><a href="lab5/5_2.php">Номер 2</a></li>
-        <li><a href="lab5/5_3.php">Номер 3</a></li>
+        <li><a href="lab5/lab5_1.php">задание 1</a></li>
+        <li><a href="lab5/lab5_2.php">задание 2</a></li>
+        <li><a href="lab5/lab5_3.php">задание 3</a></li>
     </ul>
+</div>
 
-    <hr>
-
-    <h2>Лабораторная работа 6:</h2>
+<div class="block">
+    <h2>лабораторная работа 6</h2>
     <ul>
-        <li><a href="lab6/6_1.php">Номер 1</a></li>
-        <li><a href="lab6/session/menu.inc.php">Номер 2</a></li>
+        <li><a href="lab6/6_1.php">задание 1</a></li>
+        <li><a href="lab6/session/menu.inc.php">задание 2</a></li>
     </ul>
+</div>
 
 </body>
-
 </html>
