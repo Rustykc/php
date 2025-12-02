@@ -1,11 +1,11 @@
 <?php
 declare(strict_types=1);
 
-function getTable($rows = 5, $cols = 5, $color = 'lightblue') {
-    drawTable($rows, $cols, $color);
+function getTable($rows = 7, $cols = 4, $color = '#4fa1ffff') {
+    drawTable($cols, $rows, $color);
 }
 
-function drawTable(int $cols = 5, int $rows = 5, string $color = 'yellow'): int
+function drawTable(int $cols = 5, int $rows = 5, string $color = '#00ccff'): int
 {
     static $count = 0;
     $count++;
