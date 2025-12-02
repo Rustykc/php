@@ -2,8 +2,6 @@
 declare(strict_types=1);
 
 $message = '';
-
-// укажи свою рабочую почту, на которую будут приходить письма
 $toEmail = 'agerkert022@gmail.com';
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
@@ -14,11 +12,10 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     if ($body === '') {
         $message = 'Ошибка: текст письма не может быть пустым!';
     } else {
-        // заголовки письма
+        
         $headers = "From: noreply@" . $_SERVER['SERVER_NAME'] . "\r\n";
         $headers .= "Content-Type: text/plain; charset=utf-8\r\n";
 
-        // отправка письма
         if (mail($toEmail, $subject, $body, $headers)) {
             $message = 'Письмо успешно отправлено!';
         } else {
