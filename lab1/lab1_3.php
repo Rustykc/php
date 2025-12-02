@@ -1,5 +1,5 @@
 <?php
-    $day = rand();
+    $day = 2;
 ?>
 <!DOCTYPE html>
 <html lang="ru">

@@ -106,12 +106,12 @@
     </ul>
 </div>
 
-<div class="block">
+<!-- <div class="block">
     <h2>лабораторная работа 7</h2>
     <ul>
         <li><a href="lab6/lab7_1.php">задание 1</a></li>
     </ul>
-</div>
+</div> -->
 
 </body>
 </html>

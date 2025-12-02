@@ -1,12 +1,21 @@
 <?php
-if ($_SERVER['REQUEST_METHOD'] == 'POST') {
-  $cols = abs((int) $_POST['cols']);
-  $rows = abs((int) $_POST['rows']);
-  $color = trim(strip_tags($_POST['color']));
+$cols = 10;
+$rows = 10;
+$color = '#ffff00';
+
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    if (isset($_POST['cols'])) {
+        $cols = abs((int)$_POST['cols']);
+    }
+
+    if (isset($_POST['rows'])) {
+        $rows = abs((int)$_POST['rows']);
+    }
+
+    if (isset($_POST['color'])) {
+        $color = trim(strip_tags($_POST['color']));
+    }
 }
-$cols = ($cols) ? $cols : 10;
-$rows = ($rows) ? $rows : 10;
-$color = ($color) ? $color : '#ffff00';
 ?>
 <!-- Область основного контента -->
 <h3>Таблица умножения</h3>
