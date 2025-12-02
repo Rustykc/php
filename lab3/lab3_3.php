@@ -243,7 +243,7 @@ $totalConstants = getTotalConstantsCount($constants);
 <body>
     <div class="container">
         <div class="header">
-            <h1>📋 Определённые константы PHP</h1>
+            <h1>Определённые константы PHP</h1>
             <p>Полный список всех констант, доступных в текущей среде выполнения</p>
         </div>
         
@@ -304,10 +304,6 @@ $totalConstants = getTotalConstantsCount($constants);
             <?php endif; ?>
         </div>
         
-        <div class="footer">
-            Сгенерировано <?= date('d.m.Y H:i:s') ?> | 
-            Память: <?= round(memory_get_peak_usage() / 1024 / 1024, 2) ?> MB
-        </div>
     </div>
 
     <script>
