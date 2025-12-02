@@ -101,8 +101,15 @@
 <div class="block">
     <h2>лабораторная работа 6</h2>
     <ul>
-        <li><a href="lab6/6_1.php">задание 1</a></li>
+        <li><a href="lab6/lab6_1.php">задание 1</a></li>
         <li><a href="lab6/session/menu.inc.php">задание 2</a></li>
+    </ul>
+</div>
+
+<div class="block">
+    <h2>лабораторная работа 7</h2>
+    <ul>
+        <li><a href="lab6/lab7_1.php">задание 1</a></li>
     </ul>
 </div>
 
