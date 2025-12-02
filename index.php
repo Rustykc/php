@@ -85,7 +85,7 @@
 <div class="block">
     <h2>лабораторная работа 4</h2>
     <ul>
-        <li><a href="lab4/site/index.php">задание 1</a></li>
+        <li><a href="lab4/index.php">задание 1</a></li>
     </ul>
 </div>
 
