@@ -1,31 +1,23 @@
 <?php
 declare(strict_types=1);
 
-function getTable(int $rows = 5, int $cols = 5, string $color = '#ff0000'): string {
-    $html = '<table>';
+function getTable($rows = 5, $cols = 5, $color = '#90ee90') {
+    echo "<table>";
     for ($i = 1; $i <= $rows; $i++) {
-        $html .= '<tr>';
+        echo "<tr>";
         for ($j = 1; $j <= $cols; $j++) {
-            $style = '';
-            if ($i === 1) {
-                $style = "background-color: $color;";
+            if ($i == 1 || $j == 1) {
+                // первая строка или первый столбец
+                echo "<th style='background-color: $color; text-align: center; font-weight: bold;'>" . ($i * $j) . "</th>";
+            } else {
+                echo "<td>" . ($i * $j) . "</td>";
             }
-            
-            if ($j === 1) {
-                $style = "background-color: $color;";
-            }
-
-            if ($i === 1 && $j === 1) {
-                $style = "background-color: $color;";
-            }
-
-            $html .= "<td style='$style'>" . ($i * $j) . "</td>";
         }
-        $html .= '</tr>';
+        echo "</tr>";
     }
-    $html .= '</table>';
-    return $html;
+    echo "</table>";
 }
+
 
 
 
