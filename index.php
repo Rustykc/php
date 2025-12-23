@@ -109,7 +109,14 @@
  <div class="block">
     <h2>лабораторная работа 7</h2>
     <ul>
-        <li><a href="lab7/gbook.php">задание 1</a></li>
+        <li><a href="lab7/users.php">задание 1</a></li>
+    </ul>
+</div>
+
+<div class="block">
+    <h2>лабораторная работа 8</h2>
+    <ul>
+        <li><a href="lab8/gbook.php">задание 1</a></li>
     </ul>
 </div>
 
