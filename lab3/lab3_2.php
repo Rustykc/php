@@ -62,7 +62,7 @@ function formatRussianDate(int $timestamp): string
 }
 
 
-//  Расчёт времени до дня рождения
+//  расчёт времени до дня рождения
 
 function getBirthday(int $now, int $birthday): array
 {
