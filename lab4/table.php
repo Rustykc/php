@@ -3,7 +3,7 @@ declare(strict_types=1);
 
 $cols = 7;
 $rows = 4;
-$color = '#4fa1ffff';
+$color = '#4fa1ff';
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     if (isset($_POST['cols']) && $_POST['cols'] !== '') {
@@ -35,7 +35,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
   <br>
   <input name="color" type="color" value="<?= htmlspecialchars($color, ENT_QUOTES) ?>" list="listColors">
   <datalist id="listColors">
-      <option>#4fa1ffff</option>
+      <option>#4fa1ff</option>
       <option>#ff0000</option>
       <option>#00ff00</option>
       <option>#0000ff</option>
