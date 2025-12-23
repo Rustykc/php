@@ -2,9 +2,9 @@
 namespace src\Classes;
 
 class User {
-    public $name;
-    public $login;
-    private $password;
+    // public $name;
+    // public $login;
+    // private $password;
 
     /**
      * Конструктор класса User
@@ -12,7 +12,7 @@ class User {
      * @param string $login Логин пользователя
      * @param string $password Пароль пользователя
      */
-    public function __construct(string $name, string $login, string $password) {
+    public function __construct(public string $name, public string $login, private string $password) {
         $this->name = $name;
         $this->login = $login;
         $this->password = $password;
