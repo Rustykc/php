@@ -49,5 +49,3 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 <?php
   getTable($rows, $cols, $color);
 ?>
-<!-- Таблица -->
-<!-- Область основного контента -->
