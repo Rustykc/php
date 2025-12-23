@@ -1,13 +1,28 @@
 <?php
 declare(strict_types=1);
 
+// Код для всех страниц - вывод информации о посещенных страницах
+
+/*
+ЗАДАНИЕ 2
+- В случае сохранения данных 
+	- в массив, проверьте, существует ли он в сессии
+	- в строку, преобразуйте её в массив
+- Выводите в цикле список всех посещённых пользователем страниц
+*/
+
+/**
+ * Выводит список всех посещенных страниц
+ */
 function displayVisitedPages(): void {
+    // Проверяем, существует ли массив посещенных страниц в сессии
     if (isset($_SESSION['visited_pages']) && !empty($_SESSION['visited_pages'])) {
         echo "<h3>Список посещённых страниц:</h3>";
         echo "<ul>";
         
+        // Выводим все посещенные страницы в цикле
         foreach ($_SESSION['visited_pages'] as $index => $page) {
-            $pageName = basename($page); 
+            $pageName = basename($page); // Получаем только имя файла
             echo "<li>" . ($index + 1) . ". $pageName</li>";
         }
         
@@ -17,5 +32,6 @@ function displayVisitedPages(): void {
     }
 }
 
+// Выводим список посещенных страниц
 displayVisitedPages();
 ?>
