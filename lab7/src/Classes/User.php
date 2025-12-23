@@ -13,15 +13,9 @@ class User {
      * @param string $password Пароль пользователя
      */
     public function __construct(public string $name, public string $login, private string $password) {
-        $this->name = $name;
-        $this->login = $login;
-        $this->password = $password;
         echo "Пользователь {$this->login} создан<br>";
     }
 
-    /**
-     * Выводит информацию о пользователе
-     */
     public function showInfo(): void {
         echo "<div style='border: 1px solid #ccc; padding: 10px; margin: 10px;'>";
         echo "<h3>Информация о пользователе:</h3>";
@@ -31,9 +25,6 @@ class User {
         echo "</div>";
     }
 
-    /**
-     * Деструктор класса User
-     */
     public function __destruct() {
         echo "Пользователь {$this->login} удален<br>";
     }
